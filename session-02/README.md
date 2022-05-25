@@ -15,4 +15,3 @@
 ### Beginner
 
 - [**Return Something to Me**](../exercises/return-something-warmup/)
-
