@@ -13,7 +13,3 @@
 - [**Remove String Spaces**](../exercises/remove-string-spaces/README.md)
 - [**Same on both ends**](../exercises/same-on-both-ends/README.md)
 - [**Secret Society**](../exercises/secret-society/README.md)
-
-## Kahoot
-
-[https://create.kahoot.it/share/gym-session-02/13cd003e-e988-4061-b247-b5b3c542cd98](https://create.kahoot.it/share/gym-session-02/13cd003e-e988-4061-b247-b5b3c542cd98)
