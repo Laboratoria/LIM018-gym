@@ -23,3 +23,11 @@ __Ejemplo:__
     firstLast6([6, 1, 2, 3]) → true
     firstLast6([13, 6, 1, 2, 3]) → false
 ```
+
+__Solución:__
+```js
+function firstLast6(nums){
+  let lastNums= nums.length - 1
+  return nums[0]===6 ||nums[lastNums]===6
+}
+```
