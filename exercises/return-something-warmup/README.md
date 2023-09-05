@@ -28,6 +28,12 @@ giveMeSomething("Bob Jane") ➞ "something Bob Jane"
 
 giveMeSomething("something") ➞ "something something"
 ```
+__Solución__
+```js
+function giveMeSomething(a) {
+	return `something ${a}`
+}
+```
 
 ## Objetivos de aprendizaje (OAs)
 
