@@ -22,3 +22,9 @@ __Ejemplos:__
   reverse3([5, 11, 9]) → [9, 11, 5]
   reverse3([7, 0, 0]) → [0, 0, 7]
 ```
+__Solución:__
+```js
+function reverse3(nums){
+  return nums.reverse()
+}
+```
