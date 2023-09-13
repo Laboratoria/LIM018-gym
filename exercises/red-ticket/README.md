@@ -24,3 +24,12 @@ __Ejemplo__
     redTicket(2, 2, 1) → 0
     redTicket(0, 0, 0) → 5
 ```
+__Solución__
+```js
+function redTicket(a, b, c){
+  return (a===b && b===c && c===2)?10
+          :(a===b && b===c)?5
+          :(a!==b && a!==c)?1:0
+  
+}
+```
