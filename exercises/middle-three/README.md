@@ -23,3 +23,11 @@ __Ejemplo__
     middleThree('and') → "and"
     middleThree('solving') → "lvi"
 ```
+__Solución__
+```js
+function middleThree(str){
+  const strArr = str.split("")
+  const middle = Math.trunc(strArr.length/2)
+  return `${strArr[middle-1]}${strArr[middle]}${strArr[middle+1]}` 
+}
+```
