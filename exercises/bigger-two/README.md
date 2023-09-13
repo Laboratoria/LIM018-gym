@@ -24,3 +24,13 @@ __Ejemplo__
     biggerTwo([3, 4], [1, 2]) → [3, 4]
     biggerTwo([1, 1], [1, 2]) → [1, 2]
 ```
+__Solución__
+```js
+function biggerTwo(a, b){
+  const firstArray=a.reduce((a, b) => a + b));
+  const secondArray=b.reduce((a, b) => a + b));
+  return firstArray===secondArray
+         ?a
+         :(firstArray>secondArray?a:b)
+}
+```
