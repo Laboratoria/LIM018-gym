@@ -47,6 +47,7 @@ Escribe una función que:
 ```
 
 __Solución:__
+
 ```js
 function askForMissingDetails(list) {
   return list.filter((item)=>{
