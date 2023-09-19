@@ -31,3 +31,11 @@ Explicación: En la entrada recibimos un arreglo el cual debemos utilizarlo para
 > - El string devuelto debe contener el formato para ser correcto y
  completar este desafío.
 > - ¡No olvide el espacio que incluye después del paréntesis de cierre!
+
+__Solución__
+```js
+function createPhoneNumber(numbers){
+  const numGroup = (first,last) => (numbers.slice(first,last).join(""))
+   return `(${numGroup(0,3)}) ${numGroup(3,6)}-${numGroup(6,10)}`
+}
+```
