@@ -23,3 +23,9 @@ __Ejemplo__
     plusTwo([4, 4], [2, 2]) → 4,4,2,2
     plusTwo([9, 2], [3, 4]) → 9,2,3,4
 ```
+__Solución__
+```js
+function plusTwo(a, b){
+  return a.concat(b)
+}
+```
