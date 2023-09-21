@@ -27,3 +27,10 @@ Salida: [false,1,1,2,1,3,"a",0,0]
 >
 > - Considera el tipo de dato
 > - ¡No olvides retornar el  arreglo con los ceros al final!
+
+__Solución__
+```js
+function moveZeros(arr) {
+return arr.filter(item=>(item!==0)).concat(arr.filter(item=>(item===0)))
+}
+```
