@@ -36,3 +36,19 @@ Ejemplo 2
 > **Importante** ❗
 >
 > - sentence consiste solo de letras del alfabeto Ingles.
+>
+
+Solución:
+```js
+var checkIfPangram = function(sentence) {
+    const arraySentence=sentence.split("").map((item)=>(item.charCodeAt(0)));
+    let resultado = true;
+    for(let i = 97; i<123; i++){
+       if(arraySentence.includes(i)===false) {
+           resultado = false
+           break 
+       }
+    }
+    return resultado
+};
+```
