@@ -25,7 +25,14 @@ societyName(["Adam", "Sarah", "Malcolm"]) ➞ "AMS"
 societyName(["Harry", "Newt", "Luna", "Cho"]) ➞ "CHLN"
 societyName(["Phoebe", "Chandler", "Rachel", "Ross", "Monica", "Joey"]) ➞ "CJMPRR"
 ```
+__Solución__
 
+```js
+function societyName(friends) {
+	const firstLetters = friends.map(item=>item.charAt(0))
+	return firstLetters.sort().join("").toUpperCase()
+}
+```
 > __Importante__ ❗
 >
 > El nombre de la sociedad secreta debe ser enteramente en mayúsculas.

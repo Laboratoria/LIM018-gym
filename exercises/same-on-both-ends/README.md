@@ -33,3 +33,20 @@ Notas
   coincidir con la "p" minúscula.
 - Ten ojo con los signos de puntuación u otros caracteres que no sean letras.
 - ¡“Puntos” extra si usas expresiones regulares!
+
+__Solución:__
+```js
+function countSameEnds(str) {
+	const strMayus=str.toUpperCase().split("")
+	const strFilter=strMayus.filter((item)=>{
+		const itemCode=item.codePointAt(0);
+		return itemCode===32||(itemCode>=65 && itemCode<=90)
+	})
+	const strArray=strFilter.join("").split(" ")
+	return strArray.map(item=>{
+		const wordArray=item.split("");
+		const wordLength=wordArray.length;
+		return wordLength>1&&(wordArray[0]===wordArray[wordLength-1])
+	}).filter(item=>item===true).length
+}
+```

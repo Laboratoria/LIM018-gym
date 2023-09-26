@@ -25,3 +25,11 @@ __Ejemplo:__
     comboString('Hi', 'Hello') → "HiHelloHi"
     comboString('aaa', 'b') → "baaab"
 ```
+__Solución:__
+```js
+function comboString(a, b){
+  const firstStr = a.length;
+  const secondStr = b.length;
+ return (firstStr<secondStr)?`${a}${b}${a}`:`${b}${a}${b}`
+}
+```

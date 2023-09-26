@@ -22,3 +22,9 @@ __Ejemplo__
     helloName('Alice') → "Hello Alice!"
     helloName('X') → "Hello X!"
 ```
+__Solución__
+```js
+function helloName(name){
+  return `Hello ${name}!`
+}
+```

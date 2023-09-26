@@ -26,3 +26,13 @@ noSpace('8aaaaa dddd r     ') ➞ '8aaaaaddddr'
 > __Importante__ ❗
 >
 > - Las cadenas pasadas solo constarán de letras y espacios.
+
+__Solución:__
+```js
+function noSpace(x){
+  const items=x.split("");
+  const noSpaceArray= []
+  items.map((item)=>(item===" "?item:noSpaceArray.push(item)))
+  return noSpaceArray.join("")
+}
+```

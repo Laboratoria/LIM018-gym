@@ -30,3 +30,6 @@ Salida: "ninja, samurai and ronin"
 > - Los strings con valores vacíos deben ser ignorados.
 > - Los arrays vacíos o los valores null/nil/None que se pasen al la función
 > deben dar como resultado una string vacío.
+
+__Solución:__
+

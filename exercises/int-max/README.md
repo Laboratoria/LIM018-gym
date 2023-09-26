@@ -23,3 +23,10 @@ __Ejemplo__
     intMax(1, 3, 2) → 3
     intMax(3, 2, 1) → 3
 ```
+__Solución__
+
+```js
+function intMax(a, b, c){
+  return (a>b)&(a>c)?a:((b>a)&(b>c)?b:c)
+}
+```

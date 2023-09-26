@@ -23,3 +23,12 @@ __Ejemplos__
 removeChar('eloquent') ➞ 'loquen';
 removeChar('country') ➞ 'ountr';
 ```
+__Solución__
+```js
+function removeChar(str){
+  const strArray = str.split("")
+  strArray.shift()
+  strArray.pop()
+  return strArray.join("")
+};
+```

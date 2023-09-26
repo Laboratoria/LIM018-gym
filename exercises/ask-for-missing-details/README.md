@@ -45,3 +45,18 @@ Escribe una función que:
   question: 'Hi, could you please provide your language.' }
 ]
 ```
+
+__Solución:__
+
+```js
+function askForMissingDetails(list) {
+  return list.filter((item)=>{
+    for (let clave in item){
+      if(item[clave]===null){
+        item.question=`Hi, could you please provide your ${clave}.`
+      }
+    }
+    return item.question
+  })
+}
+```

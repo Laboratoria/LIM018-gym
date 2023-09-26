@@ -28,3 +28,10 @@ __Ejemplo 2__
 
 - Entrada: `Patrick Feeney`
 - Salida: `P.F`
+  
+__Solución__
+```js
+function abbrevName(name){
+ return (name.split(" ").map(item=>(item.charAt(0)))).join(".").toUpperCase()
+}
+```

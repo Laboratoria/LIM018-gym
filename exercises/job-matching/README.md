@@ -59,3 +59,11 @@ Explicación: "La candidata establece un salario deseado de 190000 menos 19000 c
 >En ocasiones el se olvidan de poner algunos valores...  
 >Si el salario mínimo de la candidata o el salario máximo del puesto no están
 >presentes, lanza un error.
+
+__Solución__
+```js
+  if(job.maxSalary===undefined || candidate.minSalary===undefined){
+      throw TypeError("error")
+ }
+  return candidate.minSalary*0.9<=job.maxSalary
+```

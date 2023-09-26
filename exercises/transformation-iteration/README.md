@@ -32,3 +32,21 @@ transform('kata','math') ➞ ["kata", "mata", "math"]
 > - `source` y `target` siempre tendrán la misma longitud
 > - Si una letra  de `source` coincide al momento de iterar con otra letra de `target`
 > entonces no hay transformación de letras
+
+__Solución__
+```js
+function transform(source, target) {
+  const arraySource = [source];
+  const sourceArray = source.split("")
+  const targetArray = target.split("")
+   for (let i = 0; i < sourceArray.length; i++) {
+     if(sourceArray[i]!==targetArray[i])
+     {
+         sourceArray[i]=targetArray[i]
+         const sourceArr=sourceArray.join('')
+         arraySource.push(sourceArr)
+     }
+  }
+  return arraySource 
+}
+```

@@ -39,3 +39,15 @@ Explicación: restando de [1,2,2,2,3] la coincidencia de valor [2] el resultado 
 >
 > - Si un valor de `a` está presente en `b`, todas sus coincidencias deben
 > eliminarse de `b`
+
+__Solución__
+```js
+function arrayDiff(a, b) {
+ let resultA=a
+ b.map((item)=>{
+    const filterA=resultA.filter((value)=>(value!==item))
+    return resultA=filterA
+  })
+  return resultA
+}
+```
