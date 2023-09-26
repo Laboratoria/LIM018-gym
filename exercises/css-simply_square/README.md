@@ -21,12 +21,17 @@ Escriba el HTML/CSS en el editor para replicar la imagen objetivo de la derecha.
 __Código de base__
 
 ```html
-    <div></div>
-    <style>
-      div {
-        width: 100px;
-        height: 100px;
-        background: #dd6b4d;
-      }
-    </style>
+  <div></div>
+  <style>
+    *{
+      background: #5D3A3A;
+      padding: 0px;    
+      margin: 0px;
+    }
+    div {
+      width: 50%;
+      height: 67%;
+      background: #B5E0BA;
+    }
+  </style>
 ```
